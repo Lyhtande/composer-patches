@@ -1,0 +1,61 @@
+Index: config/schema/mtcaptcha.schema.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config/schema/mtcaptcha.schema.yml b/config/schema/mtcaptcha.schema.yml
+--- a/config/schema/mtcaptcha.schema.yml	
++++ b/config/schema/mtcaptcha.schema.yml	(date 1666699373746)
+@@ -10,33 +10,21 @@
+     private_key:
+       type: string
+       label: 'Private Key'
+-      type: mapping
+-      label: 'Widget settings'
+-      mapping:
+-        theme:
+-          type: string
+-          label: 'Theme'
+-        language:
+-          type: string
+-          label: 'Language'
+-        widgetsize:
+-          type: string
+-          label: 'Captcha Widget Size'
+-        enablecaptcha:
+-          type: string
+-          label: 'Enable MTCaptcha for'
+-        custom_config_enable:
+-          type: string
+-          label: 'Enable custom MTCaptcha configuration'
+-        type:
+-          type: string
+-          label: 'Type'
+-        size:
+-          type: string
+-          label: 'Size'
+-        tabindex:
+-          type: integer
+-          label: 'Tabindex'
+-        noscript:
+-          type: boolean
+-          label: 'Enable fallback for browsers with JavaScript disabled'
+\ No newline at end of file
++    enablecaptcha:
++      type: string
++      label: 'Enable MTCaptcha for'
++    custom_config_enable:
++      type: string
++      label: 'Enable custom MTCaptcha configuration'
++    custom_config_setting:
++      type: string
++      label: 'Custom MTCaptcha configuration'
++    theme:
++      type: string
++      label: 'Theme'
++    language:
++      type: string
++      label: 'Language'
++    widgetsize:
++      type: string
++      label: 'Captcha Widget Size'
